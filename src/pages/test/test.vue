@@ -95,7 +95,7 @@ export default {
 .test-pages {
   width: 100%;
   height: 100%;
-  background: url("../../assets/images/timg2.jpeg") no-repeat;
+  background: gray;
   background-size: cover;
   .question-title{
     color:#fff;

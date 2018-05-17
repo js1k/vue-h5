@@ -26,7 +26,7 @@
     .home-pages{
         height:100%;
         width:100%;
-        background:url('../../assets/images/timg4.jpeg') no-repeat;
+        background:olivedrab;
         background-size:cover;
         display:flex;
         align-items: center;
