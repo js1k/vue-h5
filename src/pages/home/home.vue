@@ -26,7 +26,7 @@
     .home-pages{
         height:100%;
         width:100%;
-        background:url('../../assets/images/ChMkJ1nJ3lWIK4VEANR7u8-XSYEAAgy_wAAAAAA1HvT992.jpg') no-repeat;
+        background:url('../../assets/images/timg4.jpeg') no-repeat;
         background-size:cover;
         display:flex;
         align-items: center;

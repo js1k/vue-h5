@@ -39,7 +39,7 @@ export default{
     .score-pages{
         width:100%;
         height:100%;
-        background:url('../../assets/images/ChMkJlnJ3d-Ida30APaVLXYRDiUAAgy_AFVb4YA9pVF279.jpg') no-repeat;
+        background:url('../../assets/images/timg1.jpeg') no-repeat;
         background-size:cover;
         display: flex;
         align-items: center;
