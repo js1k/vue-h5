@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import home from '@/pages/home/home'
-import score from '@/pages/score/score'
-import test from '@/pages/test/test'
+// import home from '@/pages/home/home'
+// import test from '@/pages/test/test'
+// import score from '@/pages/score/score'
+const home =r=>require.ensure([],()=>r(require('@/pages/home/home')))
+const test =r=>require.ensure([],()=>r(require('@/pages/test/test')))
+const score =r=>require.ensure([],()=>r(require('@/pages/score/score')))
 
 Vue.use(Router)
 
