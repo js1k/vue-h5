@@ -7,20 +7,22 @@
   </div>
 </template>
 <script>
-    export default{
-        name:'home',
-        data(){
-            return {
-                name:'home'
-            }
-        },
-        methods:{
-            goTest(){
-                // this.$router.push(`./test/${123}`)
-                this.$router.push({name:'test',params:{id:123}})
-            }
+import Vue from 'vue'
+
+export default{
+    name:'home',
+    data(){
+        return {
+            name:'home'
+        }
+    },
+    methods:{
+        goTest(){
+            // this.$router.push(`./test/${123}`)
+            this.$router.push({name:'test',params:{id:123}})
         }
     }
+}
 </script>
 <style lang="less" scoped>
     .home-pages{
