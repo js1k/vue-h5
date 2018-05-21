@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import App from './App'
-import router from './router'
+import router from './router/index.js'
 import store from './store/index'
 import './assets/common.less'
 // import './config/rem'

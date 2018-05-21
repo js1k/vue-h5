@@ -1,0 +1,2 @@
+webpackJsonp([6],{wpRo:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var l={render:function(){var e=this.$createElement,t=this._self._c||e;return t("div",[t("h3",[this._v("list")]),this._v(" "),t("router-view")],1)},staticRenderFns:[]},r=n("Z0/y")(null,l,!1,null,null,null);t.default=r.exports}});
+//# sourceMappingURL=6.69e4d082d642ead0417b.js.map
