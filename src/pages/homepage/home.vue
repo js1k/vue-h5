@@ -18,8 +18,8 @@
     },
     methods:{
       goTest(){
-        // this.$router.push(`./test/${123}`)
-        this.$router.push({name:'test',params:{id:123}})
+        this.$router.push(`test`)
+        //this.$router.push({path:'test',params:{id:123}})
       }
     }
   }

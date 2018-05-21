@@ -22,8 +22,7 @@ export default new Router({
         },
         {
           path:'/homepage',
-          redirect:'/homepage/home',
-          component:home,
+          component:homepage,
           children:[
             {
               path: 'home',
@@ -31,16 +30,16 @@ export default new Router({
               component: home,
             },
             {
+              path: 'test',
+              // path: 'test',
+              name: 'test',
+              component: test
+            },
+            {
               path: 'score',
               name: 'score',
               component: score
             },
-            {
-              // path: '/test/:id',
-              path: 'test',
-              name: 'test',
-              component: test
-            }
           ]
         },
       {
