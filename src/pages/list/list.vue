@@ -1,6 +1,27 @@
 <template>
-  <div>
-    <h3>list</h3>
-    <router-view></router-view>
+  <div class="list-pages">
+    <navHeader :title="list"></navHeader>
   </div>
 </template>
+<script>
+import { XHeader } from 'vux'
+import Vue from 'vue'
+import navHeader from '../components/nav-header.vue'
+
+export default {
+    components:{
+        XHeader,
+        navHeader
+    },
+    data(){
+          return {
+            list:'title'
+          }
+    }
+}
+</script>
+<style lang="less">
+  .list-pages{
+    width: 100%;
+  }
+</style>

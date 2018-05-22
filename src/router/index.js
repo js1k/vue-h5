@@ -18,7 +18,7 @@ export default new Router({
     routes: [
         {
           path:'/',
-          redirect:'/homepage'
+          //redirect:'/homepage'
         },
         {
           path:'/homepage',
@@ -43,23 +43,23 @@ export default new Router({
             },
           ]
         },
-      {
-        path:'/list',
-        component:list,
-        child:[
-          {
-            path:'home',
-            component:home
-          }
-        ]
-      },
-      {
-        path:'/picture',
-        component:home
-      },
-      {
-        path:'/more',
-        component:home
-      }
+        {
+          path:'/list',
+          component:list,
+          child:[
+            {
+              path:'home',
+              component:home
+            }
+          ]
+        },
+        {
+          path:'/picture',
+          component:home
+        },
+        {
+          path:'/more',
+          component:home
+        }
     ]
 })

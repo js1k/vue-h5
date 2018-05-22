@@ -38,7 +38,7 @@ export default {
     }
     .app-nav{
       width: 100%;
-      height: 120px;
+      height: 100px;
     }
   }
 </style>
