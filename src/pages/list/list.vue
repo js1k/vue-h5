@@ -64,24 +64,27 @@ export default {
           padding:30px 0;
           display: flex;
           .list-user-img{
-            width: 100px;
-            height: 100px;
-            margin-right:20px;
             img{
-              width: 100%;
-              height: 100%;
+              width: 100px;
+              height: 100px;
               border-radius: 50%;
             }
           }
           .list-user-info{
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            overflow: hidden;
+            margin-left:20px;
             p{
               font-size: 25px;
+              display: inline-block;
             }
             .list-title{
               line-height: 40px;
+              margin-bottom:15px;
+            }
+            .list-author{
+              margin-bottom:15px;
             }
           }
           &:after{
