@@ -37,7 +37,7 @@
       position: absolute;
       bottom:0;
       left:0;
-      border-top:1px solid #e8e8e8;
+      border-top:2px solid #e8e8e8;
     }
     .nav-back{
       position: absolute;
