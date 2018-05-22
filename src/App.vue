@@ -35,6 +35,7 @@ export default {
       width: 100%;
       height: 300px;
       flex-grow: 1;
+      overflow: scroll;
     }
     .app-nav{
       width: 100%;

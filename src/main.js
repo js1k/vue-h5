@@ -6,10 +6,18 @@ import App from './App'
 import router from './router/index.js'
 import store from './store/index'
 import './assets/common.less'
-// import './config/rem'
+import axios from 'axios';
 import 'lib-flexible/flexible'
+require('./mock')
+import VueLazyLoad from 'vue-lazyload'
+import error from './assets/images/timg4.jpeg'
 
+Vue.use(VueLazyLoad,{
+  error:error,
+  loading:error
+})
 Vue.config.productionTip = false
+Vue.prototype.$axios=axios;
 
 /* eslint-disable no-new */
 new Vue({
@@ -19,4 +27,8 @@ new Vue({
     store,
     components: { App },
     template: '<App/>'
+})
+
+Vue.filter('getYMD',function(input){
+  return input.split(' ')[0];
 })
