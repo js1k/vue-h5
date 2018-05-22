@@ -2,7 +2,8 @@
   <div class="nav-bar">
     <ul>
       <li v-for="(item,index) in list" :key="index">
-        <span @click="navigate(item.val)">{{ item.label }}</span>
+        <span :class="{'tab-actived':item.label==activeTab}"
+              @click="navigate(item.label,item.val)">{{ item.label }}</span>
       </li>
     </ul>
   </div>
@@ -12,6 +13,7 @@
   export default{
       data(){
           return {
+            activeTab:'首页',
             list:[
               {
                   label:'首页',
@@ -33,8 +35,9 @@
           }
       },
     methods:{
-      navigate(param){
-          this.$router.push(param)
+      navigate(label,url){
+          this.activeTab=label;
+          this.$router.push(url)
       }
     }
   }
@@ -60,6 +63,11 @@
         justify-content: center;
         align-items: center;
         span{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height:100%;
           font-size: 30px;
         }
       }
@@ -73,5 +81,8 @@
       left: 0;
       border-top:1px solid #e8e8e8;
     }
+  }
+  .tab-actived{
+    background:#F2F9EB;
   }
 </style>

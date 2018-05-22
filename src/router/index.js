@@ -18,7 +18,7 @@ export default new Router({
     routes: [
         {
           path:'/',
-          //redirect:'/homepage'
+          redirect:'/homepage'
         },
         {
           path:'/homepage',

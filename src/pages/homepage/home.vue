@@ -34,9 +34,9 @@
     align-items: center;
     justify-content: center;
     button{
-      height:80px;
-      padding:0 50px;
-      border-radius: 8px;
+      height:200px;
+      width: 200px;
+      border-radius: 50%;
       background:#fff;
       color:red;
       font-size:30px;

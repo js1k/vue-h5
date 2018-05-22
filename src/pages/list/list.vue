@@ -1,6 +1,9 @@
 <template>
   <div class="list-pages">
     <navHeader :title="list"></navHeader>
+    <div class="list-content">
+
+    </div>
   </div>
 </template>
 <script>
