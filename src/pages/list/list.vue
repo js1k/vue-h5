@@ -24,7 +24,7 @@ import { XHeader } from 'vux'
 import Vue from 'vue'
 import navHeader from '../components/nav-header.vue'
 import defaultIcon from '../../assets/images/timg4.jpeg'
-
+//import()
 export default {
     components:{
         XHeader,
@@ -39,11 +39,9 @@ export default {
     },
     mounted(){
         this.$axios.post('/api/list').then(res=>{
-            console.log(res);
             if (res.status==200){
                 this.listData=res.data.articles;
             }
-            console.log(this.listData,122222);
         }).catch(res=>{
 
         })
