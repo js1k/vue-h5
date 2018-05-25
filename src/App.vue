@@ -36,6 +36,8 @@ export default {
       height: 300px;
       flex-grow: 1;
       overflow: scroll;
+      will-change: scroll-position;
+      -webkit-overflow-scrolling: touch;
     }
     .app-nav{
       width: 100%;

@@ -7,7 +7,7 @@
             v-for="(item,index) in listData"
             :key="index">
           <div class="list-user-img">
-            <img v-lazy="item.pic">
+            <img v-lazy="defaultIcon">
           </div>
           <div class="list-user-info">
             <p class="list-title">{{ item.title }}</p>
@@ -23,7 +23,7 @@
 import { XHeader } from 'vux'
 import Vue from 'vue'
 import navHeader from '../components/nav-header.vue'
-import defaultIcon from '../../assets/images/timg4.jpeg'
+import defaultIcon from '../../assets/images/timg3.jpeg'
 //import()
 export default {
     components:{
@@ -51,8 +51,12 @@ export default {
 <style lang="less">
   .list-pages{
     width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
     .list-content{
       padding:0 20px;
+      overflow-y: scroll;
       ul{
         list-style:none;
         li{
