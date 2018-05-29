@@ -14,6 +14,7 @@ const picture = ()=> import(/* webpackChunkName: "picture" */'../pages/picture/p
 const more = ()=> import(/* webpackChunkName: "more" */'../pages/more/more' )
 
 
+
 // const homepage =r=>require.ensure([],()=>r(require('@/pages/homepage/homepage')),'homepage')
 // const home =r=>require.ensure([],()=>r(require('@/pages/homepage/home')),'home')
 // const test =r=>require.ensure([],()=>r(require('@/pages/homepage/test')),'test')
@@ -65,7 +66,7 @@ export default new Router({
         },
         {
           path:'/picture',
-          component:home
+          component:picture
         },
         {
           path:'/more',

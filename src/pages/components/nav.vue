@@ -10,36 +10,49 @@
 </template>
 <script>
   import Vue from 'vue'
+  import { mapState,mapActions } from 'vuex';
+
   export default{
       data(){
           return {
-            activeTab:'首页',
-            list:[
-              {
-                  label:'首页',
-                  val:'/homepage'
-              },
-              {
-                  label:'列表',
-                  val:'/list'
-              },
-              {
-                  label:'图片',
-                  val:'/picture'
-              },
-              {
-                  label:'更多',
-                  val:'/more'
-              },
-            ]
+              list:[
+                  {
+                      label:'首页',
+                      val:'/homepage'
+                  },
+                  {
+                      label:'列表',
+                      val:'/list'
+                  },
+                  {
+                      label:'图片',
+                      val:'/picture'
+                  },
+                  {
+                      label:'更多',
+                      val:'/more'
+                  },
+              ]
           }
       },
-    methods:{
-      navigate(label,url){
-          this.activeTab=label;
-          this.$router.push(url)
+      mounted(){
+          console.log(location.hash);
+      },
+      computed:{
+          ...mapState([
+              'activeTab'
+          ]),
+
+      },
+      methods:{
+          ...mapActions([
+              'test'
+          ]),
+          navigate(label,url){
+              this.test(label)
+              this.$router.push(url)
+          }
       }
-    }
   }
 </script>
 <style lang="less">

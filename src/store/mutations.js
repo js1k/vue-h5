@@ -2,6 +2,7 @@ const ADD_ITEMNUM = 'ADD_ITEMNUM'
 const REMBER_ANSWER = 'REMBER_ANSWER'
 const REMBER_TIME = 'REMBER_TIME'
 const INITIALIZE_DATA = 'INITIALIZE_DATA'
+const CHANGE_TAB='CHANGE_TAB'
 export default {
     //点击进入下一题
     [ADD_ITEMNUM](state, num) {
@@ -27,4 +28,7 @@ export default {
         state.allTime = 0;
         state.answerid = [];
     },
+    [CHANGE_TAB](state,val){
+      state.activeTab=val
+    }
 }

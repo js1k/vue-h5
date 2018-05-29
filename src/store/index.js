@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import mutations from './mutations'
-import actions from './action'
+// import mutations from './mutations'
+// import actions from './action'
 import ajax from '../config/ajax'
 
 
@@ -12,6 +12,7 @@ const state = {
     itemNum: 1, // 第几题
     allTime: 0, //总共用时
     timer: '', //定时器
+    activeTab:'首页',
     itemDetail: [{
         "topic_id": 20,
         "active_topic_id": 4,
@@ -169,6 +170,17 @@ const state = {
         }]
     }],
     answerid: [], //答案id
+}
+const mutations={
+    edit(state,activeTab){
+        state.activeTab=activeTab;
+        console.log(activeTab);
+    },
+}
+const actions={
+    test({commit,state},val){
+        commit('edit',val)
+    }
 }
 
 export default new Vuex.Store({
