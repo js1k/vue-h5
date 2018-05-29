@@ -12,7 +12,7 @@ Vue.use(ToastPlugin, {
 const vueInstance = new Vue()
 
 let options = {}
-options.baseURL = 'http://dev.api.qiuxiaomi.cn'
+options.baseURL = 'https://dev.api.qiuxiaomi.cn'
 // options.baseURL = 'http://172.16.1.250:8081'
 // options.baseURL = 'http://172.16.1.148:8081'
 
