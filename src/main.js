@@ -6,7 +6,7 @@ import App from './App'
 import router from './router/index.js'
 import store from './store/index'
 import './assets/common.less'
-// import axios from 'axios';
+import axios from 'axios';
 import './config/axios.js'
 import 'lib-flexible/flexible'
 require('./mock')
@@ -18,7 +18,7 @@ Vue.use(VueLazyLoad,{
   loading:error
 })
 Vue.config.productionTip = false
-// Vue.prototype.$axios=axios;
+Vue.prototype.$axios=axios;
 
 /* eslint-disable no-new */
 new Vue({
